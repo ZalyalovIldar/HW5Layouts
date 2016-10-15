@@ -309,6 +309,7 @@
 				7C27B3DC1DB173B100D4137C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,20 @@
 
 #import "ViewController.h"
 
+#define UIViewAutoresizingFlexibleMargins   \
+UIViewAutoresizingFlexibleBottomMargin    | \
+UIViewAutoresizingFlexibleLeftMargin      | \
+UIViewAutoresizingFlexibleRightMargin     | \
+UIViewAutoresizingFlexibleTopMargin
+
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *avatarView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ageLabel;
+@property (weak, nonatomic) IBOutlet UITextView *infoTextView;
+@property (weak, nonatomic) IBOutlet UIView *viewWithButtons;
+
 
 @end
 
@@ -17,8 +30,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setUpMainView];
+    
 }
-
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+   
+    
+}
+- (void)setUpMainView{
+    
+    _avatarView.layer.cornerRadius = 30;
+    _nameLabel.text = @"Some Name";
+    _ageLabel.text = @"23";
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
