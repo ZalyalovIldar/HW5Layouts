@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,6 +101,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="htQ-B6-UPj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3h5-1R-r2W">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -172,33 +174,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBb-hz-E0v">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBb-hz-E0v">
                                 <frame key="frameInset" minX="16" minY="67" width="50" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.81960784310000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSn-xg-Yc0">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSn-xg-Yc0">
                                 <frame key="frameInset" minX="213" minY="251" width="155" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.81960784310000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN0-Aq-opb">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN0-Aq-opb">
                                 <frame key="frameInset" minX="16" minY="251" width="155" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.81960784310000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haV-f5-jWs">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haV-f5-jWs">
                                 <frame key="frameInset" minX="110" minY="429" width="155" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.81960784310000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="haV-f5-jWs" secondAttribute="height" multiplier="1:1" id="Crm-6D-svB"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32S-QE-wkN">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32S-QE-wkN">
                                 <frame key="frameInset" minX="309" minY="67" width="50" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.81960784310000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="top" secondItem="xBb-hz-E0v" secondAttribute="bottom" constant="56" id="4Jc-ob-ZpB"/>
+                            <constraint firstItem="ZSn-xg-Yc0" firstAttribute="top" secondItem="32S-QE-wkN" secondAttribute="bottom" constant="56" id="As7-xE-pYA"/>
+                            <constraint firstItem="32S-QE-wkN" firstAttribute="top" secondItem="6AV-Mc-tq8" secondAttribute="bottom" constant="47" id="BSa-ju-MRu"/>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="top" secondItem="ZSn-xg-Yc0" secondAttribute="top" id="Cqo-5I-URL"/>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="width" secondItem="ZSn-xg-Yc0" secondAttribute="height" multiplier="155:128" id="El3-A4-4Wh"/>
+                            <constraint firstItem="xBb-hz-E0v" firstAttribute="width" secondItem="32S-QE-wkN" secondAttribute="height" multiplier="25:64" id="I0p-1x-VSl"/>
+                            <constraint firstItem="xBb-hz-E0v" firstAttribute="height" secondItem="32S-QE-wkN" secondAttribute="height" id="ItE-1D-SNa"/>
+                            <constraint firstAttribute="trailing" secondItem="32S-QE-wkN" secondAttribute="trailing" constant="8" id="LUQ-TA-ISr"/>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="height" secondItem="ZSn-xg-Yc0" secondAttribute="height" id="OcG-Vu-ecc"/>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="baseline" secondItem="ZSn-xg-Yc0" secondAttribute="baseline" id="REm-DY-eot"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSn-xg-Yc0" secondAttribute="trailing" constant="8" id="Tw7-et-kiW"/>
+                            <constraint firstItem="haV-f5-jWs" firstAttribute="leading" secondItem="QCx-l8-VUI" secondAttribute="leading" constant="94" id="Uam-EO-2uw"/>
+                            <constraint firstItem="xBb-hz-E0v" firstAttribute="top" secondItem="6AV-Mc-tq8" secondAttribute="bottom" constant="47" id="Wik-uu-ueV"/>
+                            <constraint firstItem="ZSn-xg-Yc0" firstAttribute="leading" secondItem="UN0-Aq-opb" secondAttribute="trailing" constant="42" id="afP-aK-Ju5"/>
+                            <constraint firstItem="32S-QE-wkN" firstAttribute="leading" secondItem="xBb-hz-E0v" secondAttribute="trailing" constant="243" id="bG8-f9-CXd"/>
+                            <constraint firstItem="sLz-gV-74A" firstAttribute="top" secondItem="haV-f5-jWs" secondAttribute="bottom" constant="34" id="bPu-qw-tJR"/>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="width" secondItem="ZSn-xg-Yc0" secondAttribute="width" id="hmQ-bF-vN6"/>
+                            <constraint firstItem="xBb-hz-E0v" firstAttribute="width" secondItem="32S-QE-wkN" secondAttribute="width" id="kfn-Ux-rZg"/>
+                            <constraint firstItem="UN0-Aq-opb" firstAttribute="leading" secondItem="QCx-l8-VUI" secondAttribute="leading" constant="8" id="oR6-bO-P7r"/>
+                            <constraint firstItem="xBb-hz-E0v" firstAttribute="leading" secondItem="QCx-l8-VUI" secondAttribute="leading" constant="8" id="pfh-J1-agi"/>
+                            <constraint firstAttribute="trailing" secondItem="haV-f5-jWs" secondAttribute="trailing" constant="94" id="suA-y6-fqU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="fDV-Bm-Vyh"/>
                 </viewController>
