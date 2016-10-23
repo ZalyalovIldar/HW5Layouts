@@ -7,7 +7,7 @@
     "34053DBB485C39AD11D56AF9BD424B9869443B88" : 9223372036854775807,
     "E8230F0B47A7B2799BFEAFD30A8038E6BF79B351" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "303BC678-E71A-46DB-9017-80D543A5A7C3",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9CA96F77-F0D6-480C-BD58-1D110A8275B0",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "34053DBB485C39AD11D56AF9BD424B9869443B88" : "..",
     "E8230F0B47A7B2799BFEAFD30A8038E6BF79B351" : "HW5Layouts\/"
@@ -22,7 +22,7 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "34053DBB485C39AD11D56AF9BD424B9869443B88"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nataliSM\/HW5Layouts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ZalyalovIldar\/HW5Layouts.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E8230F0B47A7B2799BFEAFD30A8038E6BF79B351"
     }
