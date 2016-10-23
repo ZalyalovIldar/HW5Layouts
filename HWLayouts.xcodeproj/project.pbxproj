@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AF7CDD21DB38E5E00AFE163 /* ViewControllerRecents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF7CDD11DB38E5E00AFE163 /* ViewControllerRecents.m */; };
 		7C27B3C81DB173B100D4137C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C27B3C71DB173B100D4137C /* main.m */; };
 		7C27B3CB1DB173B100D4137C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C27B3CA1DB173B100D4137C /* AppDelegate.m */; };
 		7C27B3CE1DB173B100D4137C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C27B3CD1DB173B100D4137C /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AF7CDD01DB38E5E00AFE163 /* ViewControllerRecents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRecents.h; sourceTree = "<group>"; };
+		4AF7CDD11DB38E5E00AFE163 /* ViewControllerRecents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRecents.m; sourceTree = "<group>"; };
 		7C27B3C31DB173B100D4137C /* HWLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C27B3C71DB173B100D4137C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C27B3C91DB173B100D4137C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				7C27B3CA1DB173B100D4137C /* AppDelegate.m */,
 				7C27B3CC1DB173B100D4137C /* ViewController.h */,
 				7C27B3CD1DB173B100D4137C /* ViewController.m */,
+				4AF7CDD01DB38E5E00AFE163 /* ViewControllerRecents.h */,
+				4AF7CDD11DB38E5E00AFE163 /* ViewControllerRecents.m */,
 				7C27B3CF1DB173B100D4137C /* Main.storyboard */,
 				7C27B3D21DB173B100D4137C /* Assets.xcassets */,
 				7C27B3D41DB173B100D4137C /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C27B3CE1DB173B100D4137C /* ViewController.m in Sources */,
+				4AF7CDD21DB38E5E00AFE163 /* ViewControllerRecents.m in Sources */,
 				7C27B3CB1DB173B100D4137C /* AppDelegate.m in Sources */,
 				7C27B3C81DB173B100D4137C /* main.m in Sources */,
 			);

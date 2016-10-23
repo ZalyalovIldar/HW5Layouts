@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 
-#define UIViewAutoresizingFlexibleMargins   \
-UIViewAutoresizingFlexibleBottomMargin    | \
-UIViewAutoresizingFlexibleLeftMargin      | \
-UIViewAutoresizingFlexibleRightMargin     | \
-UIViewAutoresizingFlexibleTopMargin
+//#define UIViewAutoresizingFlexibleMargins   \
+//UIViewAutoresizingFlexibleBottomMargin    | \
+//UIViewAutoresizingFlexibleLeftMargin      | \
+//UIViewAutoresizingFlexibleRightMargin     | \
+//UIViewAutoresizingFlexibleTopMargin
 
 @interface ViewController ()
 
@@ -41,10 +41,10 @@ UIViewAutoresizingFlexibleTopMargin
     
 }
 - (void)setUpMainView{
-    
-    _avatarView.layer.cornerRadius = 30;
-    _nameLabel.text = @"Some Name";
-    _ageLabel.text = @"23";
+//    
+//    _avatarView.layer.cornerRadius = 30;
+//    _nameLabel.text = @"Some Name";
+//    _ageLabel.text = @"23";
     
 }
 
