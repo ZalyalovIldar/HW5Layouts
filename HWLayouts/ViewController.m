@@ -43,8 +43,8 @@ UIViewAutoresizingFlexibleTopMargin
 - (void)setUpMainView{
     
     _avatarView.layer.cornerRadius = 30;
-    _nameLabel.text = @"Some Name";
-    _ageLabel.text = @"23";
+    _nameLabel.text = @"Some Name АААаааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа";
+    _ageLabel.text = @"23 12312312312312312312312312313123123123123121212121231231212121212312312121212";
     
 }
 
